@@ -5,7 +5,7 @@ import { createMenu } from './src/Menu.js';
 
 const app = new Application();
 const cellSize = 30;
-const playGroundSize = 4;
+const playGroundSize = 20;
 const borderSize = 1;
 const menuWidth = 11;
 
