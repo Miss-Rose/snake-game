@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="menu">
+      <h1>Snake Game</h1>
+      <div class="score-container">
+        Best:
+        <span id="best">0</span>
+      </div>
+      <div class="score-container">
+        Score:
+        <span id="score">0</span>
+      </div>
+      <div id="radio-container" style="visibility: hidden">
+        <div>
+          <input
+            type="radio"
+            id="classic"
+            name="gameType"
+            value="Classic"
+            checked
+          />
+          <label for="classic">Classic</label>
+        </div>
+        <div>
+          <input type="radio" id="no_die" name="gameType" value="No Die" />
+          <label for="no_die">No Die</label>
+        </div>
+        <div>
+          <input type="radio" id="speed" name="gameType" value="Speed" />
+          <label for="speed">Speed</label>
+        </div>
+      </div>
+
+      <div class="control-container">
+        <button id="menu-btn">Menu</button>
+        <button id="play-btn">Play</button>
+        <button id="exit-btn">Exit</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
